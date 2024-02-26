@@ -9,15 +9,15 @@
         "npm",
         "package"
     ],
-    "homepage": "http://github.com/SirKitts/hello",
+    "homepage": "https://github.com/SirKitts/hello",
     "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/SirKitts/hello/LICENSE"
+      "url": "https://github.com/SirKitts/hello/LICENSE"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/SirKitts/hello.git"
+    "url": "git+ssh://git@github.com/SirKitts/hello.git"
   }
 }
