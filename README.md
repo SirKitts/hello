@@ -32,7 +32,7 @@ greetingsList   -> list of greetings other than the default greetings
 
 exclamation -> exclamation point addeed to the end of greetings.
             -> default ""
-
+```
 
 ### Samples ###
 ```
