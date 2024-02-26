@@ -1,0 +1,23 @@
+{
+    "name": "@sirkitts/hello",
+    "version": "1.0.0",
+    "description": "Hello",
+    "main": "index.js",
+    "license": "MIT",
+    "keywords": [
+        "hello",
+        "npm",
+        "package"
+    ],
+    "homepage": "http://github.com/SirKitts/hello",
+    "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/SirKitts/hello/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/SirKitts/hello.git"
+  }
+}
