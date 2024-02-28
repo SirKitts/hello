@@ -25,5 +25,3 @@ function hello(name, greetings = "", greetingsList = [], exclamation = "") {
 };
 
 module.exports = hello;
-
-console.log( hello() )
