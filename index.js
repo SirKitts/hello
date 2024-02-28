@@ -1,5 +1,5 @@
-function getDayGreetings(date = '') {
-  const d = new Date(date);
+function getDayGreetings() {
+  const d = new Date();
   const hour = d.getHours();
 
   if (hour >= 17 ) {
@@ -25,3 +25,5 @@ function hello(name, greetings = "", greetingsList = [], exclamation = "") {
 };
 
 module.exports = hello;
+
+console.log( hello() )

@@ -19,7 +19,7 @@ Hello World!
 
 ### Params (optional) ###
 ```
-name        -> string - name of  a person
+name        -> string - name of a person
             -> default ""
             -> if no name, it will display a random greet based on greetingsList
 
@@ -30,7 +30,7 @@ greetingsList   -> list of greetings other than the default greetings
                 -> default greetings ["Hello", "Hi", "Welcome", dayGreet]
                 -> day greet is based on current time
 
-exclamation -> exclamation point addeed to the end of greetings.
+exclamation -> exclamation point added to the end of greetings.
             -> default ""
 ```
 
@@ -40,5 +40,4 @@ console.log( hello() );
 console.log( hello("Jack"));
 console.log( hello("John", "Welcome aboard!") );
 console.log( hello("Jose", "", ["Hey", "Ahoy there", "No way"], "!") );
-
 ```
