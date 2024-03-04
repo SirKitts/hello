@@ -1,11 +1,11 @@
 function getDateAndTimeToday() {
-  const date = new Date();
+  const today = new Date();
   const time = new Date().toTimeString().split(" ");
   
-  const month = date.getMonth()+1;
+  const month = today.getMonth()+1;
   const monthStr = (month < 10) ? "0"+month : month;
 
-  const day = date.getDate();
+  const day = today.getDate();
   const dayStr = (day < 10) ? "0"+day : day;
 
   let offset = "0";
@@ -15,14 +15,19 @@ function getDateAndTimeToday() {
     offset = -Math.abs(parseInt(time[1].split("-")[1].substring(0,2)));
   }
 
-  const hrs = Math.abs(date.getHours() + offset);
-  const mins = date.getMinutes();
-  const secs = date.getSeconds();
+  let hour = today.getHours() + offset;
+  if (hour > 23 ) {
+    hour = hour - 24;
+  }
+
+  const hrs = Math.abs(hour);
+  const mins = today.getMinutes();
+  const secs = today.getSeconds();
   const hrsStr = (hrs < 10) ? "0"+hrs : hrs;
   const minsStr = (mins < 10) ? "0"+mins : mins;
   const secsStr = (secs < 10) ? "0"+secs : secs;
 
-  const currentDate = [date.getFullYear(), monthStr, dayStr].join("-");
+  const currentDate = [today.getFullYear(), monthStr, dayStr].join("-");
   const currentTime = [hrsStr, minsStr, secsStr].join(":");
   const localeDateTime = [currentDate, currentTime].join(" ");
 
@@ -40,9 +45,9 @@ function getDayGreetings() {
     offset = -Math.abs(parseInt(time[1].split("-")[1].substring(0,2)));
   }
   
-  let hour = today.getHours() - offset;
-  if (hour < 0 ) {
-    hour = hour * -1;
+  let hour = today.getHours() + offset;
+  if (hour > 23 ) {
+    hour = hour - 24;
   }
 
   if (hour >= 17 ) {
