@@ -1,6 +1,6 @@
 {
     "name": "@sirkitts/hello",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Hello",
     "main": "index.js",
     "license": "MIT",
